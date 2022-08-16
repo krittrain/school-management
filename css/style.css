@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.logo img {
+  width: 30%;
+  border: solid white;
+  border-radius: 50px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  margin-bottom: -20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style-type: none;
+  padding: 15px 45px;
+  color: black;
+}
+
+.nav-list li:hover {
+  cursor: pointer;
+  background-color: #2c3a83;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.nav-list i {
+  margin-left: 5px;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+}
+
+.background-full {
+  background: rgba(0, 0, 0, 0.7) url("../images/schools-entrance.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.slider-list {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.firstSection {
+  padding: 80px 0 90px;
+  height: 100vh;
+}
+
+.background-section {
+  background: white;
+  background-size: cover;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 50%;
+  margin: auto;
+  height:80vh;
+}
+
+.firstHalf {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstHalf h2 {
+  font-size: 38px;
+  text-transform: capitalize;
+  padding-bottom: 12px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.firstHalf h2 span {
+  color: #2c3a83;
+}
+
+.secondHalf {
+  width: 30%;
+}
+
+.secondHalf img {
+  width: 150%;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  background-color: none;
+  color:white;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 8px 20px;
+  margin: 7px 0;
+  background-color: navy;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+
+.btn-small a{
+  text-decoration:none;
+  color: white;
+}
+
+.btn-small:hover{
+  color:white;
+  background-color: black;
+}
+
+.background-right{
+  background-image: url("../images/schools-entrance.jpg");
+  object-fit: contain;
+  width: 100%;
+  height: 78%;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.sectionRight{
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 550px;
+  position: center;
+  position: relative;
+  z-index: 1;
+
+}
+.sectionDetails {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionHeading h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+}
+
+.contact{
+  background-color: #f6f5f4;
+  height:833px;
+}
+
+.text-center{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+  font-family:'Ubuntu', sans-serif;
+}
+
+.form{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.form-input{
+  width:100%;
+  font-size:14px;
+  border:2px solid grey;
+  border-radius: 6px;
+  margin: 14px 0;
+  padding: 5px 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-dark{
+  padding: 8px 20px;
+  margin: 7px 0;
+  border-radius: 8px;
+  color:black;
+  border:2px solid grey;
+  background-color: white;
+}
+
+/* .footer-bottom{
+  text-align: center;
+  background-color: black;
+  padding: 25px;
+} */
+
+.footer {
+  background:black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+
+.overlay{
+  position: relative;
+}
+
+.footer::before {
+  opacity: 0.9;
+}
+
+.footer::before {
+  opacity: 0.9;
+}
+.overlay::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: "";
+  transition: all 0.4s ease;
+}
+
+.footer .footer-top {
+  padding: 60px 0 90px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.footer .single-widget {
+  margin-top: 30px;
+}
+
+.footer .single-widget h2{
+  color: white;
+  border-bottom:2px solid yellow;
+}
+
+/* .footer .single-widget h2:before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 2px;
+} */
+
+.todText {
+  font-size: 15px;
+}
+
+.topperName {
+  font-size:20px;
+}
+
+.tod
+
+.footer .list {
+  margin-top: 20px;
+}
+
+.footer .list li {
+  line-height: 30px;
+  color: #fff;
+  list-style-type: none;
+}
+
+.footer .list li i{
+  color: #2c3a83;
+  margin-right: 15px;
+
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.col-lg-5, .col-md-6, .col-12 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer .single-widget h2:before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 2px;
+}
+
+.footer a, .footer p {
+  color: #eee;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.todImg{
+  margin-top: -48px;
+}
+
+.d-block {
+  display: block!important;
+}
+
+.txt-white {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.mb-3, .my-3 {
+  margin-bottom: 1rem!important;
+}
+
+
+.footer .bottom-head {
+  padding: 20px 0;
+  border-top: 1px solid rgba(231, 231, 231, 0.25);
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer a, .footer p {
+  font-weight: 400;
+}
+
+.text-danger {
+  color: #dc3545!important;
+}
+
+.blog{
+  background: #fff;
+  padding: 80px 0 90px;
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  padding: 0px;
+}
+
+.headtitle{
+  color: rgb(44, 58, 131);
+  visibility: visible;
+  animation-delay: 0.2s;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  text-transform: capitalize;
+  padding-bottom: 12px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-title h2::before {
+  position: absolute;
+  left: 50%;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #666;
+  bottom: -1px;
+  margin-left: -50px;
+}
+
+.section-title h2 span {
+  color: #2c3a83;
+}
+
+
+
+.section-title h2::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #666;
+  bottom: -6px;
+  margin-left: -63px;
+}
+
+
+
+.section-title p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+.description{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about{
+  text-align: center!important;
+  margin-bottom: 0.5rem!important;
+}
+
+
+.about img {
+  height: auto;
+  max-width: 100%;
+}
+
+.description p {
+  margin-bottom: 10px;
+  color: #666;
+  margin: 0;
+}
+
+
+
